@@ -27,15 +27,11 @@ curr_idx = 0
 for chunk_review in review:
   print(curr_idx)
   if curr_idx < start:
-      print('curr idx is less than start')
       pass
   else:
-    print('processing reviews')
     chunk_review = chunk_review.drop(['review_id','useful','funny','cool'], axis=1)
     chunk_list.append(chunk_review)
     processed += len(chunk_review)
-    print(curr_idx)
-    print(processed)
     if processed > num_to_keep:
       break
   curr_idx += chunk_size

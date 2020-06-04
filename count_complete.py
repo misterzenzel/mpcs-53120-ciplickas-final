@@ -40,6 +40,8 @@ def get_bag_of_words(review):
 			features[word] += 1
 	return features
 
+# Create training and testing sets
+
 train_reviews = [get_bag_of_words(review) for review in train_df['text']]
 test_reviews = [get_bag_of_words(review) for review in test_df['text']]
 
