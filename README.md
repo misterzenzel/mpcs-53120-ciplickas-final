@@ -10,7 +10,8 @@ https://www.kaggle.com/yelp-dataset/yelp-dataset
 This project uses the Yelp Academic Dataset, a collection of over 5 million Yelp user reviews. Each
 entry has the text of the review, its star value, and other metadata (review / user IDs, helpfulness, etc.)
 The file is quite large (c. 5gb); once it is downloaded, move it to this directory. I can also provide my pickled
-dataset files by request! The pickles/ and reports/ directories have some sample data in them. 
+dataset files by request! The pickles/ and reports/ directories have some sample data in them; however, please note
+that, while the files are named "reviews_500_...", they all have 1000 reviews in them. Oops!
 
 Then, we have the following structure:
 1. Top level
@@ -36,6 +37,7 @@ In order to run the experiments, execute the following:
 		* The path to the data. In this case, it is just 'review.json'
 	- example call: python3 make_dataset.py 0 10000 review.json
 		* This grabs the first 10,000 reviews from the dataset
+	- Note that you can only make datasets of sizes that are multiples of 1000
 2. Process the data using yelp_data_processing.py
 	- This requires you to input the number of reviews
 3. Make the training dataset:
