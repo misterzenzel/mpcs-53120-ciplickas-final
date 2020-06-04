@@ -5,7 +5,7 @@
 First, run ./setup.sh to create the two repos that generated files will save to. 
 
 Next, download review.json from this link:
-https://www.kaggle.com/yelp-dataset/yelp-dataset
+https://www.yelp.com/dataset
 
 This project uses the Yelp Academic Dataset, a collection of over 5 million Yelp user reviews. Each
 entry has the text of the review, its star value, and other metadata (review / user IDs, helpfulness, etc.)
