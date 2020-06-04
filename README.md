@@ -10,7 +10,7 @@ https://www.kaggle.com/yelp-dataset/yelp-dataset
 This project uses the Yelp Academic Dataset, a collection of over 5 million Yelp user reviews. Each
 entry has the text of the review, its star value, and other metadata (review / user IDs, helpfulness, etc.)
 The file is quite large (c. 5gb); once it is downloaded, move it to this directory. I can also provide my pickled
-dataset files by request!
+dataset files by request! The pickles/ and reports/ directories have some sample data in them. 
 
 Then, we have the following structure:
 1. Top level
