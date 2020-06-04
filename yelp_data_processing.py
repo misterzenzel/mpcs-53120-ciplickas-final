@@ -50,6 +50,7 @@ def prepare_review(review):
   review = [WordNetLemmatizer().lemmatize(word[0], get_wordnet_pos(word[1])) for word in pos_tags]
   review = s_a.all_words([mark_negation(review)])
   review  = [word for word in review if word not in stopwords.words('english')]
+  # https://stackoverflow.com/questions/5843518/remove-all-special-characters-punctuation-and-spaces-from-string
   review = [re.sub(r'[^(a-zA-Z\s]','',word) for word in review]
   review = [word for word in review if len(word) > 1]
   for word in review:
@@ -58,7 +59,7 @@ def prepare_review(review):
     else:
       word_counts[word] = 1
   review = ' '.join(review)
-  # https://stackoverflow.com/questions/5843518/remove-all-special-characters-punctuation-and-spaces-from-string
+  
   return review
 
 def create_vocab(word_counts, min_freq=None, top_perc=None, top_num=None):
