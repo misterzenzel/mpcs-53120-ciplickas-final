@@ -61,4 +61,7 @@ In order to run the experiments, execute the following:
 	and here: https://machinelearningmastery.com/develop-word-embedding-model-predicting-movie-review-sentiment/
 
 Once you've run the above steps, see the reports/ and pickles/ directories for the outputs!
-		 
+
+## Other Notes
+
+The exploratory analysis done in the discussion portion of my report was done mostly through ad-hoc Jupyter notebooks. I can provide that code upon request! Other than that, all of the modeling software I built is in this repo.
