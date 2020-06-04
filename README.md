@@ -28,7 +28,7 @@ Then, we have the following structure:
 		* This is where any data outputs will be saved
 	- reports
 		* This is where reports from <x>\_complete.py files will be saved
-
+## Running Experiments
 In order to run the experiments, execute the following:
 1. Make the training dataset using make\_dataset.py
 	- This takes three inputs: 
